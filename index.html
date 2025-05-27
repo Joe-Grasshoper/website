@@ -7,30 +7,34 @@
     <title>XStockSentiment</title>
     <link rel="stylesheet" href="css/styles.min.css" />
 </head>
-<body class="overflow-hidden">
-    <img class="absolute blur-sm -z-10 -translate-y-10" src="img/tile.png" alt="background">
-    <div class="relative max-w-4xl my-10 mx-auto bg-white border p-8 shadow-xl">
-        <h1 class="flex items-center justify-center gap-2 text-4xl font-semibold">See What <span><svg class="size-10" viewBox="0 0 24 24" fill="none" stroke="#000000" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-  <path d="M4 4l11.733 16h4.267l-11.733 -16z" />
-  <path d="M4 20l6.768 -6.768m2.46 -2.46l6.772 -6.772" />
-</svg></span> Says About Your Stocks!</h1>
-        <h2 class="flex text-2xl items-center justify-center mt-6">A real-time sentiment dashboard for retail traders</h2>
-        <p class="flex items-center justify-center mt-2">Track bullish and bearish sentiment from X posts in a simple dashboard built for you.</p>
+<body class="overflow-hidden max-h-screen">
+    <img class="max-h-screen hidden md:block absolute blur-sm -z-10 translate-y-12 md:translate-y-10 lg:-translate-y-10 3xl:-translate-y-40 scale-110 lg:scale-100 xl:scale-110 2xl:scale-125 3xl:scale-100" src="img/backg.png" alt="background">
+    <img class="max-h-screen md:hidden absolute blur-sm -z-10 scale-125 translate-y-36" src="img/backg-vert.png" alt="background">
+    <div class="relative lg:max-w-4xl -mt-6 lg:my-10 2xl:my-40 mx-auto bg-white border p-6 md:p-8 lg:p-6 xl:p-8 shadow-xl scale-[.85] md:scale-75 lg:scale-90 xl:scale-100 2xl:scale-150">
+        <h1 class="flex flex-wrap items-center justify-center gap-2 text-2xl sm:text-3xl md:text-4xl font-semibold">
+            See What
+                <span>
+                    <svg class="size-8 md:size-10" viewBox="0 0 24 24" fill="none" stroke="#000000" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                        <path d="M4 4l11.733 16h4.267l-11.733 -16z" />
+                        <path d="M4 20l6.768 -6.768m2.46 -2.46l6.772 -6.772" />
+                    </svg>
+                </span> Says About Your Stocks!
+        </h1>
+        <h2 class="flex text-xl md:text-2xl items-center justify-center mt-6">A real-time sentiment dashboard for retail traders</h2>
+        <p class="flex items-center justify-center mt-2 md:max-w-full">Track bullish and bearish sentiment from X posts in a simple dashboard built for you.</p>
         <div class="mt-6 mb-10">
-            <h3 class="text-xl font-semibold">Why You'll Love It:</h3>
+            <h3 class="text-lg md:text-xl font-semibold">Why you'll love it:</h3>
             <ul class="flex-row list-disc mt-4">
                 <li class="ml-16">Real-time sentiment scores for your favorite stocks</li>
                 <li class="ml-16">Clear charts to spot trends at a glance</li>
                 <li class="ml-16">Start for free, with premium features for power users</li>
             </ul>
         </div>
-        <h3 class="flex items-center justify-center font-semibold text-xl">Join the Waitlist!</h3>
-        <form class="flex items-center justify-center mt-4 gap-2" action="https://docs.google.com/forms/d/e/1FAIpQLSd5Q_S_w1evZCgpoRbRHaIya2iIuTPclRDzOnhzJYbWIWIPkQ/viewform?usp=header" method="POST">
+        <h3 class="flex items-center justify-center font-semibold text-lg md:text-xl">Join the Waitlist!</h3>
+        <form class="flex flex-col md:flex-row items-center justify-center mt-4 gap-2" action="https://docs.google.com/forms/d/e/1FAIpQLSd5Q_S_w1evZCgpoRbRHaIya2iIuTPclRDzOnhzJYbWIWIPkQ/viewform?usp=header" method="POST">
             <input class="border p-4 shadow-lg" type="email" name="entry.119635518" placeholder="Enter your email" required>
-            <input class="bg-green-600 p-4 text-white active:bg-green-700 active:scale-90 shadow-lg hover:cursor-pointer" type="submit" value="Join Waitlist">
-      </form>
+            <input class="mt-4 xs:mt-0 w-1/2 xs:w-1/5 bg-green-600 p-4 text-white active:bg-green-700 active:scale-90 shadow-lg hover:cursor-pointer" type="submit" value="Join Waitlist">
+        </form>
     </div>
 </body>
-
-
 </html>
